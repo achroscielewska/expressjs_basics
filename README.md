@@ -110,4 +110,6 @@ app.use(URL_API_BOOKS, booksRoutes);
 module.exports = app;
 ```
 
-3. check if api works `http://localhost:3000/api/books`
+3. check if api works
+to get all books `http://localhost:3000/api/books`
+to add new book you can use [https://www.getpostman.com/](postman tool) 
