@@ -1,5 +1,8 @@
 const express = require('express');
 const bodyParser = require('body-parser');
+
+const booksRoutes = require('./routes/books');
+const URL_API_BOOKS = '/api/books';
  
 const app = express();
  
@@ -13,5 +16,7 @@ app.use((req, res, next) => {
  
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
+
+app.use(URL_API_BOOKS, booksRoutes);
  
 module.exports = app;
