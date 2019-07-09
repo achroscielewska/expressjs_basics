@@ -1,26 +1,23 @@
 # bookshelfAPI
-
 Description TO_DO
 
-## APP set up
-
-### Init node.js
-in new project folder run `npm init`
-
-### install following libraries
+## Libraries
 * [express](https://www.npmjs.com/package/express)
 * [nodemon](https://www.npmjs.com/package/nodemon)
 * [body-parser](https://www.npmjs.com/package/body-parser) //https://stackoverflow.com/questions/38306569/what-does-body-parser-do-with-express
 
-### modify package.json file
-put in `package.json` file `"start:server": "nodemon server.js"`
+## Development server
 
-### add gitignore file
+Run `npm run start:server` for a dev server. The app will automatically reload if you change any of the source files.
 
-### add server.js file
+## APP set up
 
-### in `./src/app/app` folder
-add new file `app.js`
+1. init package.json - in new project folder run `npm init`
+2. install libraries: express, nodemon, body-parser
+3. modify package.json file - put in `package.json` file `"start:server": "nodemon server.js"`
+4. add gitignore file (copy one from project)
+5. add server.js file (copy one from project)
+6. in `./src/app/app` folder- add new file `app.js`
 
 ```javascript
 const express = require('express');
@@ -42,6 +39,5 @@ app.use(bodyParser.urlencoded({ extended: false }));
 module.exports = app;
 ```
 
-### run server
-`npm run start:server`
+7. run server `npm run start:server`
 The message "[nodemon] starting `node server.js`" should show up
