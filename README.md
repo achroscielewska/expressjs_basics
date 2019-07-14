@@ -132,4 +132,4 @@ module.exports = app;
 
 3. check if api works
 to get all books `http://localhost:3000/api/books`
-to add new book you can use [https://www.getpostman.com/](postman tool) 
+to add new book you can use [postman tool](https://www.getpostman.com/)
